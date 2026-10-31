@@ -15,13 +15,13 @@ body {
 /* Configurações do Header */
 header {
     background-color: #1a5276;
-    /* Azul Escuro */
     color: #ffffff;
     text-align: center;
     padding-top: 15px;
 }
 
 #titulo-curso {
+    color: #fff
     font-size: 1.3rem;
     display: block;
     margin-bottom: 15px;
