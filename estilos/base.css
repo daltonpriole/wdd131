@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #333333;
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+main h1 {
+    text-align: center;
+    color: #003366;
+}
+
+.colunas {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo para as caixas brancas */
+.card {
+    background-color: white;
+    flex: 1px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    padding: 20px;
+}
+
+.card h2 {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    margin-top: 0;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.perfil-img img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px rgb(218, 218, 218);
+}
+
+figure img {
+    max-width: 120px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+figure {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
