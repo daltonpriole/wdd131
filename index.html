@@ -1,57 +1,84 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131 - Fundamentos da Web Dinâmica - Dalton Priole</title>
-        <meta description="WDD 131 - Fundamentos da Web Dinâmica - Dalton Priole">
-        <link rel="stylesheet" href="estilos/base.css">
-    </head>
-    <body>
-        <header>
-            <span id="titulo-curso">WDD131 - Fundamentos da Web Dinâmica - Dalton Priole</span>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="https://www.linkedin.com/in/dalton-priole-24a70935/">Linkedin</a></li>
-                    <li><a href="https://byupw.instructure.com/">Canvas</a></li>
-                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7">Escritura</a></li>
-                    <li><a href="wdd131/projetofinal">Projeto Final</a></li>
-                </ul>
-            </nav>
-        </header>
+<html lang="pt-BR">
 
-        <main>
-            <h1>Dalton Priole</h1>
-            
-            <div class="colunas">
-                <section class="card">
-                    <h2>Sobre Mim</h2>
-                    <h5>Sou Dalton Priole nasci no Brasil e moro com minha familia meus dois filhos e esposa em São Carlos interior do estado de São Paulo gostamos muito de nos reunir com amigos e familia aos fins de semana e tambem gostamos de viajar conhecer lugares</h5>
-                    <img class="perfil-img" src="imagens/perfil.jpg" alt="Foto de Perfil" width="200" >
-                    <h4>São Carlos-SP, Brasil</h4>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Fundamentos da Web Dinâmica</title>
+    <!-- Vinculação do arquivo CSS -->
+    <link rel="stylesheet" href="estilos/base.css">
+</head>
 
-                    <figure><img src="imagens/Bandeira.png" content="Bandeira do Brasil">
-                        <figcaption>Bandeira Oficial do Brasil</figcaption>                   
-                    </figure>
-                </section>
+<body>
 
-                <section class="card">
-                    <h2>Recursos Web Dev</h2>
-                        <ul>
-                            <li><a href="#">Comunidade Dev.to</a></li>
-                            <li><a href="#">Revista Smashing</a></li>
-                            <li><a href="#">CSS Tricks</a></li>
-                            <li><a href="#">W3 Schools</a></li>
-                            <li><a href="#">Udemy</a></li>
-                            <li><a href="#">Imagem de Espaço Reservado</a></li>
-                        </ul>
-                </section>
+    <!-- Header com Título do Curso -->
+    <header>
+        <span id="titulo-curso">WDD 131: Fundamentos da Web Dinâmica - Dalton Priole</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=por&id=p7#p7" target="_blank">Escritura</a></li>
+                <li><a href="wdd131/projetofinal">Projeto Final</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Título Principal da Página -->
+    <h1 class="main-title">Dalton Priole</h1>
+
+    <!-- Contêiner Flexbox das duas colunas -->
+    <main class="container-cards">
+
+        <!-- Coluna 1: Sobre Mim -->
+        <section class="card">
+            <h2>Sobre Mim</h2>
+            <div class="card-content perfil-bloco">
+                <div class="texto-perfil">
+                    <p>Meu nome é Dalton moro com minha familia no Brasil no interior do estado de SP gostamos de nos reunir com amigos e familiares aos fins de semana tambem gostamos muito de viajar conhecer lugares.</p>
+                </div>
+                <!-- Altere o caminho abaixo para a sua foto real -->
+                <img src="imagens/perfil.jpg" alt="Foto de Dalton Priole" class="foto-perfil">
             </div>
-        </main>
 
-        <footer>
-            <p> © 2026 😎 Dalton Priole 😎 São Carlos, SP - Brasil</p>
-            <p id="ultimaModificacao">ultima modificação:<script src="scripts/obterdatas.js"></script></p>
-        </footer>
-    </body>
-</html>
+            <h3 class="sub-secao-titulo">São Carlos, São Paulo</h3>
+
+            <div class="card-content local-bloco">
+                <figure class="bandeira-container">
+                    <!-- Altere o caminho abaixo para a imagem da sua bandeira -->
+                    <img src="imagens/Bandeira.png" alt="Bandeira Oficial do Brasil" class="bandeira-img">
+                    <figcaption>Bandeira Oficial do Brasil</figcaption>
+                </figure>
+                <div class="texto-local">
+                    <p>São Carlos é conhecida como a Capital da Tecnologia. É uma cidade do interior de São Paulo que
+                        abriga importantes universidades e centros de pesquisa e desenvolvimento de ponta.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coluna 2: Recursos Web Dev -->
+        <section class="card">
+            <h2>Recursos Web Dev</h2>
+            <div class="card-content">
+                <ul class="recursos-lista">
+                    <li><a href="https://dev.to" target="_blank">Comunidade Dev.to</a></li>
+                    <li><a href="https://smashingmagazine.com" target="_blank">Revista Smashing</a></li>
+                    <li><a href="https://css-tricks.com" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://w3schools.com" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://udemy.com" target="_blank">Udemy</a></li>
+                    <li><a href="https://picsum.photos" target="_blank">Imagem de Espaço Reservado Lorem Picsum</a></li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Dinâmico -->
+    <footer>
+        <p>&copy;<span id="anoatual"></span> 🏛️ Dalton Priole 🗺️ São Carlos, Brasil</p>
+        <p class="ultima-modificacao">Last Modification: <span id="ultimaModificacao"></span></p>
+    </footer>
+
+    <!-- Vinculação do script Javascript -->
+    <script src="scripts/obterdatas.js"></script>
+</body>
