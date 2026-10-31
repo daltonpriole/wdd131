@@ -54,7 +54,7 @@ nav {
 }
 
 /* Título Principal */
-main, header, footer{
+main{
     display: grid;
 }
 .main-title {
