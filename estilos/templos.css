@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: left;
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+}
+
+nav {
+    max-width: auto;
+    margin: 1rem auto;
+    font-family: Roboto, sans-serif;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* quando o botão é clicado - a classe aberta é alternada (adicionada/removida) */
+.open a {
+    display: block;
+}
+
+/* large view navigation ************************************/
+@media (min-width: 37.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    #menu {
+        display: none;
+        /* ocultar botão de hambúrguer */
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    /* Rodapé */
+    footer {
+        background-color: #1a5276;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 0.95rem;
+        text-decoration-color: #1a5276;
+    }
+    
+    footer p {
+        margin-bottom: 5px;
+    }
+    
+    .ultima-modificacao {
+        color: #f1c40f;
+    /* Texto Amarelo para a modificação */
+        font-size: 0.85rem;
+    }
+}
