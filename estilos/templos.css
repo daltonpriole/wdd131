@@ -132,6 +132,11 @@ footer p {
         /* ocultar botão de hambúrguer */
     }
 
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     .navigation {
         flex-direction: row;
     }
