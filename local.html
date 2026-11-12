@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Fundamentos da Web Dinâmica Pais Local</title>
+        <meta name="description" content="WDD131 - Fundamentos da Web Dinâmica Terceiro trabalho de paginas do curso para semana 3 com aplicações de tratamento de imagens e responsividade">
+        <meta name="author" content="daltonpriole Dalton Priole">
+        <!-- Vinculação do arquivo CSS -->
+        <link rel="stylesheet" href="estilos/local.css">
+        <!-- Vinculação do script Javascript -->
+        <script src="scripts/local.js" defer></script>
+        <!-- Link para incluir fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>BRASIL</header>
+
+    <picture>
+        <source media="(min-width: 1000px)" srcset="semana03/imagens/principal-grande.webp">
+        <source media="(min-width: 500px)" srcset="semana03/imagens/principal-medio.webp">
+        <img src="semana03/imagens/principal-menor.webp" alt="Nome e Localização do templo" width="500" height="250">
+    </picture>
+
+    <footer>
+        <p>&copy;<span id="anoatual"></span> 🏛️ Dalton Priole 🗺️ São Carlos, Brasil</p>
+        <p class="ultima-modificacao">Last Modification: <span id="ultimaModificacao"></span></p>
+    </footer>
+</body>
+</html>
