@@ -125,8 +125,8 @@ footer p {
     }
 
     .card h2 {
-        background-color: #03341b;
-        color: #917979;
+        background-color: var(--green);
+        color: var(--white);
         text-align: left;
         padding: 0.7rem 1rem;
         margin: 15px 15px 1rem -12px;
