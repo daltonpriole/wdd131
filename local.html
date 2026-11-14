@@ -15,22 +15,55 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body>
+<i>
     <header>BRASIL</header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 750px)" srcset="imagens/brasil-medio.webp">
+                <img src="imagens/brasil-menor.webp" alt="Pais Brasil">
+            </picture>
 
-    <picture>
-        <source media="(min-width: 1900px)" srcset="imagens/brasil-grande.webp">
-        <source media="(min-width: 750px)" srcset="imagens/brasil-medio.webp">
-        <img src="imagens/brasil-menor.webp" alt="Pais Brasil" width="500" height="250">
-    </picture>
+            <section class="card card-dados">
+                <h2>Dados do País</h2>
+                <dl class="tempo">
+                    <dt>Área:</dt>
+                    <dd>8,514,876 km²</dd>
+                    <dt>População:</dt>
+                    <dd>214,3 milhões (2023)</dd>
+                    <dt>Capital:</dt>
+                    <dd>Brasília</dd>
+                    <dt>Idioma:</dt>
+                    <dd>Português</dd>
+                    <dt>Moeda:</dt>
+                    <dd>Real brasileiro</dd>
+                    <dt>Fuso horário:</dt>
+                    <dd>UTC-3</dd>
+                    <dt>Código telefônico:</dt>
+                    <dd>+55</dd>
+                </dl>
+            </section>
 
-    <section class="clima">
-        <p>localização: América do Sul</p>
-    </section>
-
-    <section class="informacoes">
-        <p>O Brasil é o maior país da América do Sul e o quinto maior do mundo em área territorial. É conhecido por sua diversidade cultural, belezas naturais, como a Amazônia e as praias do litoral, e por sua paixão pelo futebol. A capital é Brasília, e o país possui uma economia diversificada, com destaque para a agricultura, mineração e indústria.</p>
-    </section>
+            <section class="card card-clima">
+                <h2>Clima</h2>
+                <div class="icon-clima">
+                    <svg viewBox="0 0 64 64" width="90" height="90">
+                        <image href="imagens/clima.svg" alt="Ícone de nublado" width="80" height="80"/>
+                    </svg>
+                </div>
+                <dl class="tempo">
+                    <dt>Temperatura:</dt>
+                    <dd><span id="temp">10</span> °C</dd>
+                    <dt>Condições:</dt>
+                    <dd>Parcialmente Nublado</dd>
+                    <dt>Vento:</dt>
+                    <dd><span id="wind">5</span> km/h</dd>
+                    <dt>Sensação Térmica:</dt>
+                    <dd><span id="windchill">N/A</span></dd>
+                </dl>
+            </section>
+        </div>
+    </main>
 
     <footer>
         <p>&copy;<span id="anoatual"></span> 🏛️ Dalton Priole 🗺️ São Carlos, Brasil</p>

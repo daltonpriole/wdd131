@@ -15,6 +15,51 @@ header {
     font-size: 30px;
 }
 
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.icon-clima {
+    margin-bottom: 0.8rem;
+}
+
+.tempo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+}
+
+.tempo dt {
+    text-align: right;
+    font-weight: 700;
+}
+
+.tempo dd {
+    text-align: left;
+    font-weight: 400;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -48,5 +93,72 @@ footer p {
         font-size: 60px;
     }
 
-    
+    header h1 {
+        font-size: 2.5rem;
+    }
+       
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 550px;
+    }
+        
+    .hero picture img {
+        height: 100%;
+        object-fit: cover;
+    }
+        
+    .card {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.72);
+        backdrop-filter: blur(4px);
+        width: 280px;
+        padding: 0 0 1.2rem 0;
+        border-bottom: none;
+        box-shadow: 0 4px 12px rgba(232, 219, 219, 0.25);
+    }
+
+    .card h2 {
+        background-color: #03341b;
+        color: #917979;
+        text-align: left;
+        padding: 0.7rem 1rem;
+        margin: 15px 15px 1rem -12px;
+        font-size: 1.3rem;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+        
+    .card-dados {
+        top: 25px;
+        left: 25px;
+    }
+        
+    .card-clima {
+        bottom: 25px;
+        right: 25px;
+    }
+       
+    .card h2 {
+        background-color: var(--green);
+        color: var(--white);
+        text-align: left;
+        padding: 0.6rem 1rem;
+        margin: 12px 15px 1rem -10px;
+        font-size: 1.3rem;
+    }
+        
+    .card-clima h2::after {
+        content: " ⛅";
+        margin-left: 8px;
+    }
+        
+    .icon-clima {
+        display: none;
+    }
+        
+    .info {
+        padding: 0 1rem;
+        font-size: 0.85rem;
+    }
+
 }
