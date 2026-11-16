@@ -10,7 +10,11 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     font-family: roboto, sans-serif;
+    min-height: 100vh;
 }
 
 header {
@@ -81,11 +85,11 @@ footer {
     padding: 20px 0;
     font-size: 0.95rem;
     text-decoration-color: #1a5276;
-    margin-top: 5rem;
 }
 
 footer p {
     margin-bottom: 3px;
+    margin: 0.2rem 0;
 }
 
 /* Texto Amarelo para a modificação */
@@ -106,7 +110,7 @@ footer p {
     .hero {
         position: relative;
         width: 100%;
-        height: 550px;
+        height: 100vh;
     }
         
     .hero picture img {
