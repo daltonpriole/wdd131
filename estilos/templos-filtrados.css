@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: roboto, sans-serif;
+}
+
+h1 {
+    top: 0.5rem;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 1.8rem;
+}
+.barra-navegacao {
+    display: flex;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 15px 30px;
+    color: white;
+    position: relative;
+
+}
+
+img {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+}
+figcaption {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 0.8rem;
+}
+
+.res-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 0.2rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+    color: white;
+    font-size: x-large;
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+#menu.titulo::before {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 180px;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: right;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.95rem;
+    text-decoration-color: #1a5276;
+}
+    
+footer p {
+    margin-bottom: 5px;
+}
+
+ .ultima-modificacao {
+     color: #f1c40f;
+     /* Texto Amarelo para a modificação */
+     font-size: 0.85rem;
+ }
+
+/* quando o botão é clicado - a classe aberta é alternada (adicionada/removida) */
+.open a {
+    display: block;
+}
+
+/* large view navigation ************************************/
+@media (min-width: 47.5em) {
+    h1 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+    .barra-navegacao {
+        display: flex;
+        align-items: center;
+        background-color: #2b2b2b;
+        padding: 15px 30px;
+        color: white;
+    }
+
+    .titulo {
+        font-size: 24px;
+        font-weight: bold;
+        margin-right: auto;
+    }
+
+    #menu {
+        display: none;
+        /* ocultar botão de hambúrguer */
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        list-style: none;
+        position: static;
+        min-width: auto;
+    }
+
+    .navigation a {
+        display: flex;
+        flex: 1 1 100%;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    main {
+        flex: 1;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .res-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 0.7rem;
+    }
+
+    .res-grid section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .res-grid img {
+        width: 100%;
+        max-width: 100%;
+        height: 220px;
+        object-fit: cover;
+        margin-top: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Rodapé */
+    footer {
+        background-color: #333;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px 0;
+        font-size: 0.95rem;
+        text-decoration-color: #1a5276;
+        margin-top: 5rem;
+    }
+    
+    footer p {
+        margin-bottom: 3px;
+    }
+    
+    .ultima-modificacao {
+        color: #f1c40f;
+        /* Texto Amarelo para a modificação */
+        font-size: 0.85rem;
+    }
+}
