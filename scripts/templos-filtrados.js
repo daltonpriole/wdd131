@@ -6,6 +6,14 @@ hamButton.addEventListener('click', () => {
     hamButton.classList.toggle('open');
 });
 
+function toggleActive(elemnet) {
+    document.querySelectorAll('a').forEach(link => {
+        link.classList.remove('active');
+    });
+
+    elemnet.classList.add("active")
+}
+
 // Aguarda o carregamento completo do documento HTML
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -49,7 +57,8 @@ document.querySelector("#small").addEventListener('click', () => {
     createTempleCard(temples.filter(temple => temple.area < 50000));
 });*/
 
-
+const cutoffDate = new Date ("1950-01-01");
+const largeArea = 50000;
 
 const temples = [
     {
@@ -112,7 +121,7 @@ const temples = [
         templeName: "Sao Paulo, Brasil",
         location: "São Paulo, SP, Brasil",
         dedication: "2004-22-02",
-        area: 116642,
+        area: 5504,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/sao-paulo-brazil-temple/sao-paulo-brazil-temple-76404.jpg"
     },
@@ -120,11 +129,29 @@ const temples = [
         templeName: "Curitiba, Brasil",
         location: "Curitiba, PR, Brasil",
         dedication: "2008-01-06",
-        area: 116642,
+        area: 2587,
         imageUrl:
             "https://churchofjesuschristtemples.org/assets/img/temples/curitiba-brazil-temple/curitiba-brazil-temple-15573-thumb.jpg"
     }
 ];
+
+
+
+function setFiler(seletor, filterFunction) {
+    const element = document.querySelector(seletor);
+
+    element.addEventListener('click', () => {
+        toggleActive(element);
+        createTempleCard(temples.filter(filterFunction));
+    });
+}
+
+setFiler('#all', () => true);
+setFiler('#old', temple => new Date(temple.dedication) < cutoffDate);
+setFiler('#new', temple => new Date(temple.dedication) >= cutoffDate);
+setFiler('#large', temple => temple.area >= largeArea);
+setFiler('#small', temple => temple.area < largeArea);
+
 
 createTempleCard(temples);
 
