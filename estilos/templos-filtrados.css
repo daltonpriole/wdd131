@@ -27,6 +27,7 @@ img {
     margin: 0 auto;
     display: block;
     height: auto;
+    
 }
 figcaption {
     margin-top: 0.5rem;
@@ -132,6 +133,11 @@ footer p {
         margin-left: 0;
         text-align: center;
     }
+
+    p {
+        font-size: .8rem;
+    }
+
     .barra-navegacao {
         display: flex;
         align-items: center;
