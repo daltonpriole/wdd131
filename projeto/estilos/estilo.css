@@ -75,7 +75,7 @@ img {
 /* Rodapé */
 footer {
     background-color: var(--blue);
-    color: #ffffff;
+    color: var(--text-dark);
     text-align: center;
     padding: 20px 0;
     font-size: 0.95rem;
@@ -89,7 +89,7 @@ footer p {
 
 /* Texto Amarelo para a modificação */
 .ultima-modificacao {
-    color: #f1c40f;
+    color: #4b0404;
     font-size: 0.85rem;
 }
 
