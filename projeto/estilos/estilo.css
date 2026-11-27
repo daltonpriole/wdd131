@@ -1,0 +1,185 @@
+:root {
+    --blue: #428bc2;
+    --white: #ffffff;
+    --text-dark: #101010;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: roboto, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--blue);
+    color: var(--text-dark);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero picture img {
+    width: 95%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.tempo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem 0.6rem;
+    font-size: 0.9rem;
+}
+
+.tempo dt {
+    text-align: right;
+    font-weight: 700;
+}
+
+.tempo dd {
+    text-align: left;
+    font-weight: 400;
+}
+
+img {
+    width: 150px;
+    padding: 1rem;
+}
+
+
+/* Rodapé */
+footer {
+    background-color: var(--blue);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.95rem;
+    text-decoration-color: #1a5276;
+}
+
+footer p {
+    margin-bottom: 3px;
+    margin: 0.2rem 0;
+}
+
+/* Texto Amarelo para a modificação */
+.ultima-modificacao {
+    color: #f1c40f;
+    font-size: 0.85rem;
+}
+
+@media (min-width: 890px) {
+    header {
+        font-size: 60px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .hero picture img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .card {
+        position: absolute;
+        background-color: rgba(238, 241, 242, 0.72);
+        backdrop-filter: blur(4px);
+        width: 380px;
+        padding: 0 0 1.2rem 0;
+        border-bottom: none;
+        box-shadow: 0 4px 12px rgba(232, 219, 219, 0.25);
+    }
+
+    .card h2 {
+        background-color: var(--blue);
+        color: var(--text-dark);
+        text-align: left;
+        padding: 0.7rem 1rem;
+        margin: 15px 15px 1rem -12px;
+        font-size: 1.3rem;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-dados {
+        top: 25px;
+        left: 40px;
+    }
+
+    .card-dados2 {
+        top: 165px;
+        left: 40px;
+    }
+
+    .card-dados3 {
+        top: 480px;
+        left: 40px
+    }
+    
+    .card-dados4 {
+        top: 25px;
+        right: 40px;
+    }
+
+    .card-dados5 {
+        top: 290px;
+        right: 40px;
+    }
+
+    .card-dados6 {
+        top: 435px;
+        right: 40px;
+    }
+
+    .card h2 {
+        background-color: var(--blue);
+        color: var(--text-dark);
+        text-align: left;
+        padding: 0.6rem 1rem;
+        margin: 12px 15px 1rem -10px;
+        font-size: 1.3rem;
+    }
+
+    .info {
+        padding: 0 1rem;
+        font-size: 0.85rem;
+    }
+
+    img {
+        padding: 1rem;
+        width: 95px;
+    }
+
+}
